@@ -1,4 +1,5 @@
 <script>
+    export const prerender = true;
     import { onMount } from 'svelte';
 
     let isMobile = false;

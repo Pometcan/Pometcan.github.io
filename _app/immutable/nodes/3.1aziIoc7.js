@@ -1,0 +1,1 @@
+import{a as o,t as e}from"../chunks/disclose-version.Tm9hCNES.js";var m=e('<object type="image/svg+xml" data="https://cdn.svgator.com/images/2022/01/404-svg-animation.svg" alt="Kitty Yarn Play 404 SVG animation example" class="w-full h-full"></object>');function s(a){var t=m();o(a,t)}export{s as component};

@@ -1,0 +1,1 @@
+import{a as n,t as d,s as o,b as r}from"../chunks/disclose-version.BaZecHQ6.js";import{a as l}from"../chunks/render.C1Mw2DFT.js";import{d as p}from"../chunks/misc.BGa3BRog.js";var v=d('<div><main><a href="/blog">geri</a> <!></main></div>');function c(t,i){var a=v(),m=r(a),s=r(m),e=o(o(s,!0));l(e,p(i),{}),n(t,a)}export{c as component};

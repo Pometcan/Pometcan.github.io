@@ -1,1 +1,0 @@
-import{F as r,G as e,V as c,W as a,u as i,X as u,h as l,Y as _}from"./runtime.DAo4wyg0.js";function m(){const s=c,n=s.l.u;n&&(n.b.length&&r(()=>{f(s),a(n.b)}),e(()=>{const o=i(()=>n.m.map(u));return()=>{for(const t of o)typeof t=="function"&&t()}}),n.a.length&&e(()=>{f(s),a(n.a)}))}function f(s){if(s.l.s)for(const n of s.l.s)l(n);_(s.s)}export{m as i};

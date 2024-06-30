@@ -1,5 +1,8 @@
 <script>
     export const prerender = true;
+    export const ssr = true;
+    export const trailingSlash = 'ignore';
+    import "../app.css";
     import { onMount } from 'svelte';
 
     let isMobile = false;

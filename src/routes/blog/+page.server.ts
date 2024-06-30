@@ -1,5 +1,8 @@
 import { posts } from './data';
+
 export const prerender = true;
+export const ssr = true;
+export const trailingSlash = 'ignore';
 
 export function load() {
     return {

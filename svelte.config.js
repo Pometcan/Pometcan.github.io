@@ -2,10 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import preprocess from 'svelte-preprocess';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
 	preprocess: [
 		vitePreprocess(),
 		preprocess({
@@ -13,22 +10,34 @@ const config = {
 		}),
 	],
 	kit: {
-		// For GitHub Pages, we need to use the static adapter
 		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
-			strict: 'index.html'
+			strict: false
 		}),
 		paths: {
-			base: '/Pometcan.github.io',
+			base: '/Pometcan.github.io', // Projeye özgü olarak düzenleyin
 		},
-		
 		files: {
 			assets: 'static'
-		}
+		},
+		prerender: {
+      	entries: ['/', '/blog', '/blog/hello-world', '/blog/another-post', '/blog/yet-another-post', '/blog/one-more-post'],
+			handleHttpError({ error, request }) {
+			  if (error && error.message) {
+				console.error(`HTTP Error: ${error.message}`);
+			  } else {
+				console.error(`An unexpected HTTP error occurred.`);
+			  }
+			  if (request && request.url) {
+				console.error(`Request URL: ${request.url}`);
+			  } else {
+				console.error(`Request object is undefined or null.`);
+			  }
+			  // Gerekli işlemi yapın veya hata yönetimini sağlayın
+			}
+		  }
 	}
 };
 

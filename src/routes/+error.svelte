@@ -1,0 +1,1 @@
+<object type="image/svg+xml" data="https://cdn.svgator.com/images/2022/01/404-svg-animation.svg" alt="Kitty Yarn Play 404 SVG animation example" class="w-full h-full"></object>
